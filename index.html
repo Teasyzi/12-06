@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ As Peças da Nossa História ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="music" loop>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Chuva de corações -->
+    <div id="heart-container"></div>
+
+    <!-- TELA INICIAL -->
+    <section id="home" class="screen active">
+
+        <div class="hero-card">
+
+            <h1>❤️ Para Minha Mozin ❤️</h1>
+
+            <p class="subtitle">
+                Uma pequena surpresa feita especialmente para você.
+            </p>
+
+            <p>
+                Cada peça guarda uma lembrança.<br>
+                Cada lembrança guarda um sentimento.
+            </p>
+
+            <div id="daysCounter"></div>
+
+            <button id="startBtn">
+                Começar Nossa História ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- PUZZLE -->
+    <section id="puzzleScreen" class="screen">
+
+        <div class="progress-wrapper">
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+            <span id="progressText">33%</span>
+
+        </div>
+
+        <h2 id="phaseTitle"></h2>
+
+        <p id="phaseSubtitle"></p>
+
+        <div id="puzzleBoard"></div>
+
+        <div class="puzzle-help">
+            Arraste as peças para montar a foto ❤️
+        </div>
+
+    </section>
+
+    <!-- MENSAGEM -->
+    <section id="messageScreen" class="screen">
+
+        <div class="message-card">
+
+            <h2 id="messageTitle"></h2>
+
+            <p id="messageText"></p>
+
+            <button id="continueBtn">
+                Continuar ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galleryScreen" class="screen">
+
+        <h1>📸 Nossas Memórias</h1>
+
+        <div class="gallery">
+
+            <div class="photo-card">
+                <img src="img/foto1.jpg">
+            </div>
+
+            <div class="photo-card">
+                <img src="img/foto2.jpg">
+            </div>
+
+            <div class="photo-card">
+                <img src="img/foto3.jpg">
+            </div>
+
+            <div class="photo-card">
+                <img src="img/foto4.jpg">
+            </div>
+
+        </div>
+
+        <button id="letterBtn">
+            Abrir Carta ❤️
+        </button>
+
+    </section>
+
+    <!-- CARTA -->
+    <section id="letterScreen" class="screen">
+
+        <div class="letter-card">
+
+            <h1>💌 Para Minha Letícia</h1>
+
+            <p id="typedLetter"></p>
+
+            <button id="videoBtn">
+                Última Surpresa ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- VIDEO -->
+    <section id="videoScreen" class="screen">
+
+        <h1>❤️ Eu Te Amo ❤️</h1>
+
+        <video controls>
+            <source src="video/surpresa.mp4" type="video/mp4">
+        </video>
+
+        <button id="finalBtn">
+            Final ❤️
+        </button>
+
+    </section>
+
+    <!-- FINAL -->
+    <section id="finalScreen" class="screen">
+
+        <div class="final-card">
+
+            <h1>❤️ Letícia ❤️</h1>
+
+            <h2 id="finalDays"></h2>
+
+            <p>
+                Obrigado por cada sorriso.<br>
+                Obrigado por cada abraço.<br>
+                Obrigado por cada momento.<br><br>
+
+                Você é minha Mozin.<br>
+                Você é minha Pincesa.<br>
+                Você é meu amor. ❤️
+            </p>
+
+            <h3>
+                E nossa história está apenas começando...
+            </h3>
+
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
